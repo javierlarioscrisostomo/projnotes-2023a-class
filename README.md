@@ -1,2 +1,9 @@
 # projnotes-2023a-class
-proyecto de clase de la materia de desarrollo web pila completa ll, hecho con ES6+
+
+class projet from the fullStack web development
+## about...
+**author**[javier larios ](https://daringfireball.net/projects/markdown/syntax)
+
+---
+## project Stack 
+this project will be coded in ES6, as runtime enviroment the project will use node,    
