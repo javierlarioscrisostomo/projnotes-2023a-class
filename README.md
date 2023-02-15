@@ -7,3 +7,8 @@ class projet from the fullStack web development
 ---
 ## project Stack 
 this project will be coded in ES6, as runtime enviroment the project will use node,    
+
+## Project Notes
+1. [Project Creation ](https://github.com/javierlarioscrisostomo/projnotes-2023a-class)
+
+
