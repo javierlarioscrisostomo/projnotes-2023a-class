@@ -7,7 +7,7 @@
 var app = require('../app');
 var debug = require('debug')('projnotes-2023a-class:server');
 //modulo que permite la comunicacion con un cliente var http = require('http');
-
+var http = require('http');
 /**
  * Get port from environment and store in Express.
  */
@@ -86,5 +86,5 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  debug('Listening on ' + bind);
+  debug(`🤬 Listening on ${process.env.APP_URL}:${addr.port} 😁😁`);
 }
