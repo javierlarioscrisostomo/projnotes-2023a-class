@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('projnotes-2023a-class:server');
+var debug = require('debug')('projnotes');
 //modulo que permite la comunicacion con un cliente var http = require('http');
 var http = require('http');
 /**
