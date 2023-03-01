@@ -6,7 +6,7 @@
 
 var app = require('../app');
 var debug = require('debug')('projnotes-2023a-class:server');
-var http = require('http');
+//modulo que permite la comunicacion con un cliente var http = require('http');
 
 /**
  * Get port from environment and store in Express.

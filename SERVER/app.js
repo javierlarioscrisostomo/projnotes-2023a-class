@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var apiRouter = require('./routes/api');
 
 var app = express();
 
@@ -13,7 +14,23 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
+/*
+app.use((req, res, next )=>{
+
+  console.log("🤷‍♀️we have request");
+  next();
+});
+
+
+
+app.use((req, res, next )=>{
+  console.log(`👍 IP: ${req.ip}`);
+  console.log(`👍 METHOD: ${req.method}`);
+  next()
+})
+*/
 app.use(logger('dev'));
+//parse request data
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
