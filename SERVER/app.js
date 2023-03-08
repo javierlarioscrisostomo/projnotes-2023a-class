@@ -1,52 +1,59 @@
 // Helps to handle http errors
-//var createError = require('http-errors');
 import createError from 'http-errors'
 // Import the Express Library
-//var express = require('express');
 import express from 'express';
 // Is a Core-Node library to manage system paths
-//var path = require('path');
 import path from 'path'
 // Helps to parse client cookies
-//var cookieParser = require('cookie-parser');
 import cookieParser from 'cookie-parser';
 // Library to log http communication
-//var logger = require('morgan');
 import logger from 'morgan'
 
 // Importing subroutes
-//var indexRouter = require('./routes/index');
-//var usersRouter = require('./routes/users');
-//var apiRouter = require('./routes/api');
-import indexRouter from './routes/index' 
-import usersRouter from './routes/users';
-import apiRouter from './routes/api';
+import indexRouter from '@SERVER/routes/index' 
+import usersRouter from '@SERVER/routes/users';
+import apiRouter from '@SERVER/routes/api';
 
 // We are creating the express instance
-//var app = express();
 const app = express();
 
 // view engine setup
 // We are delcaring the localization of the views
-//@@ -41,12 +41,12 @@ app.use('/users', usersRouter);
+app.set('views', path.join(__dirname, 'views'));
+// Setting up the template engine
+app.set('view engine', 'hbs');
+
+// Registering middlewares
+// Log all received requests
+app.use(logger('dev'));
+// Parse request data into json
+app.use(express.json());
+// Decode url info
+app.use(express.urlencoded({ extended: false }));
+// Parse client cookies into json
+app.use(cookieParser());
+// Set up the static file server
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Registering routes
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
 app.use('/api',apiRouter);
 
 // catch 404 and forward to error handler
-//app.use(function(req, res, next) {
 app.use((req, res, next) => {
   next(createError(404));
 });
 
 // error handler
-//app.use(function(err, req, res, next) {
 app.use((err, req, res, next) => {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
-//@@ -56,4 +56,4 @@ app.use(function(err, req, res, next) {
+
+  // render the error page
+  res.status(err.status || 500);
   res.render('error');
-res.render('error');
 });
 
-//module.exports = app;
 export default app;

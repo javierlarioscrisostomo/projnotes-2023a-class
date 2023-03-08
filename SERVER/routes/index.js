@@ -17,7 +17,10 @@ router.get('/', (req, res, next) => {
 router.get('/author', (req, res) => {
   // Creating a View-Model
   let author = {
-    "name": "Ivan",
+    "name": "Javier",
+    "lastname": "larios",
+    "twitter": "@LARIOS",
+    "job": "ITGAM"
 //@@ -18,7 +20,6 @@ router.get('/author', (req, res)=>{
   };
   // Sending the view-model to be rendered by a View

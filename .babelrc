@@ -11,6 +11,18 @@
 
 
     ]
+],
+"plugins": [
+    [
+        "module-resolver",{
+      "root": ["./"],
+      "alias" : {
+        "@SERVER" : "./SERVER"
+    }
+        }
+
+
+]
 ]
 
 }

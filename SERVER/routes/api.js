@@ -11,6 +11,13 @@ const router = Router();
 // Creating the route
 router.get('/author', (req, res)=>{
 //@@ -15,4 +15,4 @@ router.get('/author', (req, res)=>{
+    res.json({
+        "name": "Javier larios ",
+        "lastname": "larios cris",
+        "twitter": "@larios",
+        "job": "tecnm"
+    });
+
 }); // function(req, res){}
 
 // Exporting the router
