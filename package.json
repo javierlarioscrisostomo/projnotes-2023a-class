@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "start": "PORT=3000 APP_URL='http://localhost' DEBUG=projnotes node ./SERVER/bin/www",
-    "dev" :  "PORT=3000 APP_URL='http://localhost' DEBUG=projnotes babel-watch --watch ./SERVER/views ./server/bin/www",
-    "build": "babel ./SERVER --out-dir"
+    "dev" :  "PORT=3000 APP_URL='http://localhost' DEBUG=projnotes babel-watch --watch ./SERVER/views ./SERVERCLEAR/bin/www",
+    "build": "npm run clean && babel ./SERVER --out-dir dist --copy-files",
+    "clean": "rm -rf ./dist"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
