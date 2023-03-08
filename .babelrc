@@ -1,5 +1,22 @@
 {
 "presets" : [
+
+    [ "minfy",{
+"builtIns" : false,
+"evaluate" : false,
+"mangle" : false
+
+
+
+    }
+
+
+
+
+
+
+    ],
+
     [
         "@babel/preset-env",{
            //los targets son las plataformas
