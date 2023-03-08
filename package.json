@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "PORT=3000 APP_URL='http://localhost' DEBUG=projnotes:server node ./server/bin/www",
-    "dev" :  "PORT=3000 APP_URL='http://localhost' DEBUG=projnotes:server babel-watch --watch ./server/views ./server/bin/www"
+    "start": "PORT=3000 APP_URL='http://localhost' DEBUG=projnotes node ./SERVER/bin/www",
+    "dev" :  "PORT=3000 APP_URL='http://localhost' DEBUG=projnotes babel-watch --watch ./SERVER/views ./server/bin/www",
+    "build": "babel ./SERVER --out-dir"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
