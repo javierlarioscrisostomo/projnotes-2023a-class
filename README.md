@@ -10,5 +10,6 @@ this project will be coded in ES6, as runtime enviroment the project will use no
 
 ## Project Notes
 1. [Project Creation ](https://github.com/javierlarioscrisostomo/projnotes-2023a-class)
+2. [Repository Creation](https://github.com/javierlarioscrisostomo/projnotes-2023a-class/blob/main/class-notes/Repository%20Creation%20)
 
 
