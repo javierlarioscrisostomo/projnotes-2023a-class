@@ -15,3 +15,4 @@ this project will be coded in ES6, as runtime enviroment the project will use no
 4. [Adding Babel](https://github.com/javierlarioscrisostomo/projnotes-2023a-class/blob/main/class-notes/Adding%20Babel)
 5. [Updating to ES6](https://github.com/javierlarioscrisostomo/projnotes-2023a-class/blob/main/class-notes/5.Updating%20to%20ES6)
 6. [Build Script](https://github.com/javierlarioscrisostomo/projnotes-2023a-class/blob/main/class-notes/6.Build%20Script)
+7. [Babel plugins]()
