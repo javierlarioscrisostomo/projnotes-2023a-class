@@ -11,5 +11,4 @@ this project will be coded in ES6, as runtime enviroment the project will use no
 ## Project Notes
 1. [Project Creation ](https://github.com/javierlarioscrisostomo/projnotes-2023a-class)
 2. [Repository Creation](https://github.com/javierlarioscrisostomo/projnotes-2023a-class/blob/main/class-notes/Repository%20Creation%20)
-
-3. [Creating dedicated Backend directory]https://github.com/javierlarioscrisostomo/projnotes-2023a-class/blob/main/class-notes/creating%20dedicated%20Backend%20directory 
+3. [creating dedicated Backend directory]  https://github.com/javierlarioscrisostomo/projnotes-2023a-class/blob/main/class-notes/creating%20dedicated%20Backend%20directory
