@@ -16,4 +16,4 @@ this project will be coded in ES6, as runtime enviroment the project will use no
 5. [Updating to ES6](https://github.com/javierlarioscrisostomo/projnotes-2023a-class/blob/main/class-notes/5.Updating%20to%20ES6)
 6. [Build Script](https://github.com/javierlarioscrisostomo/projnotes-2023a-class/blob/main/class-notes/6.Build%20Script)
 7. [Babel plugins](https://github.com/javierlarioscrisostomo/projnotes-2023a-class/blob/main/class-notes/7.Babel%20plugins)
-8. [Adding a bundler]()
+8. [Adding a bundler](https://github.com/javierlarioscrisostomo/projnotes-2023a-class/blob/main/class-notes/8.Adding%20a%20bundler)
