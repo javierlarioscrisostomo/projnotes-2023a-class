@@ -1,10 +1,15 @@
 # project creation
 
 ## introduction 
-in this part of the project we created the repository on github and the we opened a github codespaces to modify and add new files to the projectd , the steps of the afore mentioned are described bellow 
-
+Básicamente, Babel es un compilador de JavaScript. En otras palabras más técnicas, Babel es una cadena de herramientas
+que se utiliza principalmente para convertir el código ECMAScript 2015+ (ES6) en una versión de JavaScript compatible
+con versiones anteriores en navegadores o entornos actuales y anteriores, es decir, transformar la sintaxis actual de
+ES6 en versiones anteriores. 
 ## Methods 
-TODO: student will write this part 
+TODO: Para instalar babel en nuestro proyecto, se debe ejecutar los siguientes comando por el terminal (recuerda que debes disponer anteriormente de NodeJS y NPM).
+
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+npm install --save @babel/polyfill
 
 ## results 
 TODO: student will write this part 
@@ -13,4 +18,4 @@ TODO: student will write this part
 TODO: student will write this part 
 
 ## referencias 
-TODO: student will write this part 
+TODO: https://github.com/JuanDuran85/ES6_Ejercicios

@@ -1,16 +1,59 @@
 # Repository Creation
 
 ## introduction 
-in this part of the project we created the repository on github and the we opened a github codespaces to modify and add new files to the projectd , the steps of the afore mentioned are described bellow 
+Puedes crear repositorios públicos para un proyecto de código abierto. A la hora de crear el repositorio público, asegúrese de incluir un archivo de licencia que determine cómo quiere que se comparta 
+el proyecto con otros usuarios. Para más información sobre el código abierto, en concreto cómo crear e incrementar un proyecto de código abierto, hemos creado Guías de código abierto que le ayudarán a 
+desarrollar una comunidad de código abierto con la recomendación de procedimientos recomendados para crear y mantener repositorios para un proyecto de código abierto.
+También puede tomar un curso gratuito de GitHub Skills sobre el mantenimiento de comunidades de código abierto.
+También puedes agregar archivos de estado de la comunidad a los repositorios para establecer instrucciones sobre cómo contribuir, velar por la seguridad de los repositorios y mucho más. Para obtener más
+ información, vea «Creación de un archivo predeterminado de mantenimiento de la comunidad».
+
+
 
 ## Methods 
-TODO: student will write this part 
+TODO: 
+En la esquina superior derecha de cualquier página, utiliza el menú desplegable  y selecciona New repository (Nuevo repositorio).
+Menú desplegable con opción para crear un repositorio
+Escriba un nombre corto y fácil de recordar para el repositorio. Por ejemplo: "hola-mundo".
+Campo para proporcionar un nombre para el repositorio
+Opcionalmente, puede agregar una descripción del repositorio. Por ejemplo, "Mi primer repositorio en GitHub".
+Campo para escribir una descripción del repositorio
+1. Elige la visibilidad del repositorio. Para obtener más información, vea «Acerca de los repositorios».
+Botones de radio para seleccionar la visibilidad del repositorio
+1. Seleccione Initialize this repository with a README (Inicializar este repositorio con un archivo Léame).
+Inicializar este repositorio con una casilla archivo Léame
+1. Haga clic en Create repository (Crear repositorio).
+Botón para crear un repositorio
+Felicidades. Ha creado correctamente su primer repositorio y lo has inicializado con un archivo Léame.
+
+Confirma tu primer cambio
+Una confirmación es como una instantánea de todos los archivos del proyecto en un momento dado.
+
+Una vez creado el repositorio, se inicializa con un archivo Léame. Los archivos Léame son un buen lugar para describir el proyecto con más detalle o bien agregar documentación, como instrucciones de instalación o uso del proyecto. El contenido del archivo Léame se muestra automáticamente en la página principal del repositorio.
+
+Vamos a confirmar un cambio en el archivo Léame.
+
+En la lista de archivos del repositorio, haga clic en README.md.
+Archivo Léame en la lista de archivos
+Encima del contenido del archivo, haga clic en .
+En la pestaña Edit file (Editar archivo), escriba información sobre usted mismo.
+Nuevo contenido en el archivo
+1. Encima del nuevo contenido, haga clic en Vista previa de los cambios.
+Botón de vista previa del archivo
+Revisa los cambios que realizaste en el archivo. Verás el contenido nuevo en verde.
+Vista previa del archivo
+1. En la parte inferior de la página, teclea un mensaje de confirmación corto y significativo que describa el cambio que realizaste al archivo. Puedes atribuir el cambio a mas de un autor en el mensaje del mismo. Para obtener más información, vea «Crear una confirmación con distintos autores».
+Mensaje de confirmación para el cambio
+1. Debajo de los campos para el mensaje de confirmación, decide si deseas agregar tu confirmación a la rama actual o a una rama nueva. Debajo de los campos del mensaje de confirmación, decide si deseas agregar tu confirmación a la rama actual o a una nueva rama. Si tu rama actual es la rama predeterminada, debes elegir crear una nueva rama para tu confirmación y después crear una solicitud de extracción. Para obtener más información, vea «Si deseas crear una rama nueva para tu solicitud de extracción y no tienes permisos de escritura para el repositorio, puedes bifurcarlo primero.».
+Opciones de confirmación de rama
+1. Haga clic en Propose file change (Proponer cambio de archivo).
+
 
 ## results 
-TODO: student will write this part 
+TODO: primer repositorio creado
 
 ## DISCUSSIONS 
 TODO: student will write this part 
 
 ## referencias 
-TODO: student will write this part 
+TODO: https://docs.github.com/es/get-started/quickstart/create-a-repo 

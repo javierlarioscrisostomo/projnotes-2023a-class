@@ -15,7 +15,7 @@ ES6, released in 2015, added many powerful new features to the language. In this
 
 
 
-## Methods 
+##<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Methods>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 TODO:  the first thing that was done in this activity was that all the variables were updated,The first thing that was
  done was to change the variables for the new declarations and variables that ES6 provides us when a variable is declared with 
  the var that is a keyword, it is declared globally or locally if it is declared inside a function, this was the that we were 
@@ -139,17 +139,8 @@ módulo _ exportaciones = enrutador ;
 cambio   
 exportar enrutador predeterminado ;  
 
+##<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<RESULTS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
-
-
-
-
-
-
-
-
-## results 
 TODO: ES6  introduces  important  JavaScript  syntax  improvements  which  make  the  code easier  to  read  and  maintain.  Also,  as  the  support  for 
 browsers  is  extensive,  you can use it in most of your projects natively.ES6,  also  known  as  ECMAScript  2015  or  simply  "Harmony"  is  one  of  
 the  most important  standards.  Given  its  importance,  browser  support  quickly  grew  from Edge  and  Safari  to  Chrome,  Firefox  and  Opera  and 
