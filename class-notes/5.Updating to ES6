@@ -6,15 +6,40 @@ the old code and changing some structure of the code with the help of professor 
 the structure was changed in the same way, the declarations of the variables and some methods 
 and functions
 
+ECMAScript, or ES, is a standardized version of JavaScript. Because all major browsers follow this specification, the terms ECMAScript and JavaScript are interchangeable.
+Most of the JavaScript you've learned up to this point was in ES5 (ECMAScript 5), which was finalized in 2009. While you can still write programs in ES5, JavaScript is constantly evolving, and new features are released every year.
+ES6, released in 2015, added many powerful new features to the language. In this course, you'll learn these new features, including arrow functions, destructuring, classes, promises, and modules.
+
+
 
 ## Methods 
-TODO:  public/images/croquis.png
+TODO:  the first thing that was done in this activity was that all the variables were updated,The first thing that was done was to change the variables for the new declarations and variables that ES6 provides us when a variable is declared with the var that is a keyword, it is declared globally or locally if it is declared inside a function, this was the that we were taught in the ES6 course
+
+
+
+In the same way we saw what let means, know that it is a keyword, it behaves in a similar  way  but  with  some  additional  characteristics,  but  when  a  variable  is declared with the let its scope is limited to that block.
+
+Before changing something else in our code, what we did first was change all the vars for the import ones, this is because it is an update of es6 since apparently var should not exist in the code
+
+
+In  the  same  way,  concise  declarative  functions,  it  is  known  that  when  defining functions within objects in ES5, keywords such as function must be used.but as e told us in es6 you can eliminate the function that is a keyword and that the colon when defining functions in objects the function is refactored inside an object and  as  it  was  said  in  the  course  you  should  no  longer  use  the  expression  of traditional function
+what  we  did  anyway  was  good  remembering  the  class  of  using  a  destructuring assignment to pass an object as a parameter to a functionWe saw that in some cases the object can be destructured in a function argument itself.when  profile  data  is  passed  to  the  previous  function,  the  values are  unstructured from  the  function  parameter  for  use  within  the  function  and  what  we  did  in  the structure  change  was  to  change  the  functions  as  they  were  before  to  the  new conditions of the updated structure es6
+
+
+
+
+
+
+
+
 
 ## results 
-TODO: student will write this part 
+TODO: ES6  introduces  important  JavaScript  syntax  improvements  which  make  the  code easier  to  read  and  maintain.  Also,  as  the  support  for  browsers  is  extensive,  you can use it in most of your projects natively.ES6,  also  known  as  ECMAScript  2015  or  simply  "Harmony"  is  one  of  the  most important  standards.  Given  its  importance,  browser  support  quickly  grew  from Edge  and  Safari  to  Chrome,  Firefox  and  Opera  and  is  now  supported  by  all browsers
+
 
 ## DISCUSSIONS 
 TODO: student will write this part 
 
 ## referencias 
-TODO: student will write this part 
+TODO: https://github.com/rivalcoba/projnotes-2023a-class/commit/5425772d56effdf4e0ef9945da231b58e0591ebf#diff-d347091b60673886a3f7f9f7eaf7e970812f0fc22217d00b234df8266f46199d
+
