@@ -148,8 +148,11 @@ is  now  supported  by  all browsers
 
 
 ## DISCUSSIONS 
-TODO: student will write this part 
+TODO: ES6 or ECMAScript 6 is a scripting language standard developed in accordance with the indications contained in the ECMA-262 document provided by Ecma International (European Computer Manufacturers Association). Ecma international is an association founded in 1961 that deals with standardization in the information technology and communication systems sector.
 
+ECMAScript is, therefore, a standard created with the aim of allowing the interoperability of different web pages between different browsers. The language standard specifies the features that a scripting language should have and how they should be implemented.
+
+Examples of languages ​​that have been implemented from ECMAScript are Javascript, ActionScript, and Jscript (Microsoft), now very popular as scripting languages ​​for the client-side of web development.
 ## referencias 
 TODO: https://github.com/rivalcoba/projnotes-2023a-class/commit/5425772d56effdf4e0ef9945da231b58e0591ebf#diff-d347091b60673886a3f7f9f7eaf7e970812f0fc22217d00b234df8266f46199d
 
