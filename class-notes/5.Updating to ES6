@@ -50,94 +50,94 @@ the structure of the code a bit in this part because let's remember that it help
 
 well we continue and what keeps changing was where the express library is imported for example
 var express = require('express'); that was changed by this new syntax which is import express from 'express';
- despues donde esta la biblioteca core-node para administrar las rutas del sistema se cambio var  ruta  = require ( 'ruta' ) ; por 
- importar  ruta  desde 'ruta'  de la misma manera que donde se ayuda a anaizar las cookies del cliente se cambio esto 
- var  cookieParser  = require ( 'cookie-parser' ) ;  por estoimportar  cookieParser  desde 'cookie-parser' ;  y en la biblioteca 
- para registrar la comunicacion http se cambiovar  logger  = require ( 'morgan' ) ;  por importar  registrador  de 'morgan' 
-  donde se cambio igual la estructura de nuestro codigo para que segun es6 sea mas facil es 
-var  indexRouter  = require ( './routes/index' ) ; 
-var  usersRouter  = require ( './routes/users' ) ; 
-var  apiRouter  = require ( './routes/api' ) ; 
-se cambio por import y en algunos pequeños simbolos como los ()
-importar  indexRouter  desde './routes/index'  
-importar  usuariosRouter  desde './routes/users' ; 
-importar  apiRouter  desde './routes/api' ;  
+ then where is the core-node library to manage the system paths was changed var route = require ('route'); by
+ import route from 'route' in the same way as where it helps to analyze client cookies, change this
+ var cookieParser = require('cookie-parser'); so import cookieParser from 'cookie-parser' ; and in the library
+ to log the http communication, change var logger = require('morgan'); by importing logger from 'morgan'
+  where the structure of our code was also changed so that according to es6 it is easier is
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var apiRouter = require('./routes/api');
+It was changed by import and in some small symbols like the ()
+import indexRouter from './routes/index'
+import routerusers from './routes/users' ;
+import apiRouter from './routes/api';
 
-donde se creo la instancia express se cambio var  app  =  express ( ) por la siguiente manera ;const  app  =  express ( ) ; 
-se cambio donde se ve la configuracion del motor y donde se declara la localizacion de las vistas aplicación _ uso ( '/api' , apiRouter ) ;
-esto se agrego
+where the express instance was created, var app = express ( ) was changed to the following way: const app = express ( );
+changed where the engine configuration is seen and where the location of the views is declared application _ use ( '/api' , apiRouter ) ;
+this is added
 
-tambien donde esta la captura 404 y se reenvian los controladores de errores se actualizo a aplicación _ use ( ( req ,  res ,  siguiente ) => {  
-por ultimo el manejador de errores donde algunas lineas se agregaron nada mas como aplicación _ use ( ( err ,  req ,  res ,  siguiente ) => {   por que estaba asi 
-aplicación _ use ( función ( err ,  req ,  res ,  siguiente )  { 
-esos fueron unos cambios que se hicieron en apllicacion.js 
+also where is the 404 trap and error handlers are forwarded was updated to application _ use ( ( req , res , next ) => {
+Finally, the error handler where some lines were added just like application _ use ( ( err , req , res , next ) => { why was it like this
+app _ use ( function ( err , req , res , next ) {
+those were some changes that were made in application.js
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-en la pagina www.js donde se importa la logica del servidor para importar codigo desde un archivo externo se cambio var  aplicación  = requerir ( '../aplicación' ) ; 
-por importar  aplicación  desde '../app' ;  y donde se importan las dependencias igual se hizo un cambio de variables como var  debug  =  require ( 'debug' ) ( 'projnotes' ) ;
-por  importar  depuración  desde  'depuración' ; const  debug  =  Depurar ( 'projnotas' ) y lo que se hizo en el modulo que permite comunicarse con un cliente y tambien usa el 
-protocolo http se hizo el cambio de variables como lo son var  http  = requerir ( 'http' ) ; importar  http  desde 'http' ; 
+on the www.js page where the server logic is imported to import code from an external file, change var application = require ( '../application' ) ;
+by importing app from '../app' ; and where the dependencies are imported, a change of variables was made as var debug = require ( 'debug' ) ( 'projnotes' ) ;
+by importing debug from 'debug' ; const debug = Debug ( 'projnotas' ) and what was done in the module that allows to communicate with a client and also uses the
+http protocol the variables were changed as they are var http = require ( 'http' ) ; import http from 'http' ;
 
-para la obtencion del puerto del entorno y almacen express se hizo el cambio de variable var  port  =  normalizePort ( proceso . env . PUERTO  ||  '3000' ) ;
-const  port  =  normalizePort ( proceso . env . PUERTO  ||  '3000' ) ; 
+to obtain the environment port and express storage, the variable change was made var port = normalizePort ( process . env . PORT || '3000' ) ;
+const port = normalizePort ( process . env . PORT || '3000' ) ;
 
-donde creamos el servidor http se cambiaron iguales unas variables de funcion como lo son aqui var  servidor  =  http . crearServidor ( aplicación ) ;  // (req, res) => { acciones }
- servidor  constante =  http . crearServidor ( aplicación ) ;  // (req, res) => { acciones } 
+where we created the http server, some function variables were changed the same as here var server = http. createServer ( application ) ; // (req, res) => { actions }
+ constant server = http . createServer ( application ) ; // (req, res) => { actions }
 
- donde semanejan errores de escucha especificos con mensajes amistosos se cambiaron igual sintaxis como  consola _ error ( bind + ' requiere privilegios elevados ' ) ;   esto por esto 
-      consola _ error ( `  $ { bind } requiere privilegios elevados` ) ; 
+ where specific listener errors are handled with friendly messages changed to the same syntax as console _ error ( bind + ' requires elevated privileges ' ) ; this for this
+      console _ error ( ` $ { bind } requires elevated privileges` ) ;
 
-      y por ultimo donde esta la funcion escuchar se cambio igual la sintaxis como por ejemplo
-    var  dirección  =  servidor . dirección ( ) ;
-    var  bind  =  typeof  addr  ===  'cadena'
-    ? ' tubería ' + dirección  
-    : ' puerto ' + dirección . puerto ;  
+      and finally where is the listen function, the syntax was changed the same as for example
+    var address = server . address ( ) ;
+    var bind = typeof addr === 'string'
+    ? 'pipe' + address
+    : ' port ' + address . port ;
    
-   dirección  constante =  servidor . dirección ( ) ;
-   const  bind  =  typeof  addr  ===  'cadena'
-    ? ` canalización ${ dirección } `
-    : ` puerto ${ dirección . puerto } ` ;  
+   constant address = server . address ( ) ;
+   const bind = typeof addr === 'string'
+    ? ` pipe ${ address } `
+    : ` port ${ address . port } ` ;
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-en la api.js se hicieron cambios igual de sintaxis donde es la importacion de la biblioteca express como por ejemplo se cambio 
-var expreso = require ( ' expreso ' ) ;   
-// Creación de una instancia de enrutador
-var  enrutador  =  expreso . Enrutador ( ) ; 
-por la nueva sintaxis que es //////
-importar expreso de 'expreso' ;   
-const { Enrutador } = express ;   
-const  enrutador  =  enrutador ( ) ;
+in the api.js the same syntax changes were made where the import of the express library is, for example, it was changed
+var express = require ( ' express ' ) ;
+// Create a router instance
+var router = express . router();
+because of the new syntax which is //////
+import express from 'express' ;
+const { Router } = express ;
+const router = router ( ) ;
  
- de igual manera donde esta exportando con el enrutador se cambio módulo _ exportaciones = enrutador ;  por
-exportar enrutador predeterminado ;  
+ In the same way, where you are exporting with the router, change module _ exports = router; by
+export default router ;
 --------------------------------------------------------------------------------------------------------------------------------
-en el caso de index.js igual se cambio la sintaxix como lo fue var  express  =  require ( 'express' ) ; 
-var  enrutador  =  expreso . Enrutador ( ) ; por la nueva sintaxis que es esta 
-importar  expreso  de  'expreso' ;
-const  { Enrutador }  =  express ;
+in the case of index.js the same syntax was changed as it was var express = require ( 'express' ) ;
+var router = express . router(); because of the new syntax that is this
+import express from 'express' ;
+const { Router } = express ;
 
-const  enrutador  =  enrutador ( ) ;
+const router = router ( ) ;
 
-donde se obtiene la pagina de inicio igual se hizo el cambio de funcion por las flechitas como por ejemplo
-enrutador _ obtener ( '/' ,  función ( req ,  res ,  siguiente )  { por el ejemplo de abajo 
-enrutador _ obtener ( '/' ,  ( req ,  res ,  siguiente ) => {  
+where the home page is obtained, the change of function was made by the little arrows, for example
+router _ get ( '/' , function ( req , res , next ) { for the example below
+router _ get( '/' , ( req , res , next ) => {
 ----------------------------------------------------------------------------------------------------------------------------
-en usuarios.js se cambiaron varios var por importar o const el ejemplo es el de aqui abajo 
-var  express  =  require ( 'express' ) ;
-var  enrutador  =  expreso . Enrutador ( ) ;
-el cambio a nuevo codigo es 
-importar  expreso  de  'expreso' ;
-const  { Enrutador }  =  express ;
+in users.js several vars were changed to import or const the example is below
+var express = require ( 'express' ) ;
+var router = express . router();
+the change to new code is
+import express from 'express' ;
+const { Router } = express ;
 
-const  enrutador  =  enrutador ( ) ;
+const router = router ( ) ;
 
-enrutador _ obtener ( '/' ,  función ( req ,  res ,  siguiente )  {
-cambio 
-enrutador _ obtener ( '/' ,  ( req ,  res ,  siguiente ) => {  
-  res . enviar ( 'responder con un recurso' ) ;
+router _ get( '/' , function ( req , res , next ) {
+change
+router _ get( '/' , ( req , res , next ) => {
+  res . send( 'respond with a resource' ) ;
 } ) ;
 
-módulo _ exportaciones = enrutador ;
-cambio   
-exportar enrutador predeterminado ;  
+module _ exports = router ;
+change
+export default router ;
 
 ##<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<RESULTS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
