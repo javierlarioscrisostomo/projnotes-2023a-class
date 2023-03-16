@@ -6,24 +6,140 @@ the old code and changing some structure of the code with the help of professor 
 the structure was changed in the same way, the declarations of the variables and some methods 
 and functions
 
-ECMAScript, or ES, is a standardized version of JavaScript. Because all major browsers follow this specification, the terms ECMAScript and JavaScript are interchangeable.
-Most of the JavaScript you've learned up to this point was in ES5 (ECMAScript 5), which was finalized in 2009. While you can still write programs in ES5, JavaScript is constantly evolving, and new features are released every year.
-ES6, released in 2015, added many powerful new features to the language. In this course, you'll learn these new features, including arrow functions, destructuring, classes, promises, and modules.
+ECMAScript, or ES, is a standardized version of JavaScript. Because all major browsers follow 
+this specification, the terms ECMAScript and JavaScript are interchangeable.
+Most of the JavaScript you've learned up to this point was in ES5 (ECMAScript 5), which was finalized in 2009.
+ While you can still write programs in ES5, JavaScript is constantly evolving, and new features are released every year.
+ES6, released in 2015, added many powerful new features to the language. In this course, you'll learn these new features,
+ including arrow functions, destructuring, classes, promises, and modules.
 
 
 
 ## Methods 
-TODO:  the first thing that was done in this activity was that all the variables were updated,The first thing that was done was to change the variables for the new declarations and variables that ES6 provides us when a variable is declared with the var that is a keyword, it is declared globally or locally if it is declared inside a function, this was the that we were taught in the ES6 course
+TODO:  the first thing that was done in this activity was that all the variables were updated,The first thing that was
+ done was to change the variables for the new declarations and variables that ES6 provides us when a variable is declared with 
+ the var that is a keyword, it is declared globally or locally if it is declared inside a function, this was the that we were 
+ taught in the ES6 course
 
 
 
-In the same way we saw what let means, know that it is a keyword, it behaves in a similar  way  but  with  some  additional  characteristics,  but  when  a  variable  is declared with the let its scope is limited to that block.
+In the same way we saw what let means, know that it is a keyword, it behaves in a similar  way  but  with  some  additional 
+ characteristics,  but  when  a  variable  is declared with the let its scope is limited to that block.
 
-Before changing something else in our code, what we did first was change all the vars for the import ones, this is because it is an update of es6 since apparently var should not exist in the code
+Before changing something else in our code, what we did first was change all the vars for the import ones, this is because it 
+is an update of es6 since apparently var should not exist in the code
 
 
-In  the  same  way,  concise  declarative  functions,  it  is  known  that  when  defining functions within objects in ES5, keywords such as function must be used.but as e told us in es6 you can eliminate the function that is a keyword and that the colon when defining functions in objects the function is refactored inside an object and  as  it  was  said  in  the  course  you  should  no  longer  use  the  expression  of traditional function
-what  we  did  anyway  was  good  remembering  the  class  of  using  a  destructuring assignment to pass an object as a parameter to a functionWe saw that in some cases the object can be destructured in a function argument itself.when  profile  data  is  passed  to  the  previous  function,  the  values are  unstructured from  the  function  parameter  for  use  within  the  function  and  what  we  did  in  the structure  change  was  to  change  the  functions  as  they  were  before  to  the  new conditions of the updated structure es6
+In  the  same  way,  concise  declarative  functions,  it  is  known  that  when  defining functions within objects in ES5, 
+keywords such as function must be used.but as e told us in es6 you can eliminate the function that is a keyword and that the
+colon when defining functions in objects the function is refactored inside an object and  as  it  was  said  in  the  course 
+you  should  no  longer  use  the  expression  of traditional function
+
+what  we  did  anyway  was  good  remembering  the  class  of  using  a  destructuring assignment to pass an object as a 
+parameter to a functionWe saw that in some cases the object can be destructured in a function argument itself.when  profile 
+data  is  passed  to  the  previous  function,  the  values are  unstructured from  the  function  parameter  for  use  within 
+the  function  and  what  we  did  in  the structure  change  was  to  change  the  functions  as  they  were  before  to  the
+new conditions of the updated structure es6
+
+
+What was done was to follow the professor in his code. We updated our old code and put the new one as explained above on how we changed the variables and functions.
+
+The same was done with the professor, the rpofesor rivalcoba started changing in app.js
+we had var createerror = require('http-errors') and that was changed by import createError from 'http-errors' which changes 
+the structure of the code a bit in this part because let's remember that it helped to handle HTTP errors
+
+well we continue and what keeps changing was where the express library is imported for example
+var express = require('express'); that was changed by this new syntax which is import express from 'express';
+ despues donde esta la biblioteca core-node para administrar las rutas del sistema se cambio var  ruta  = require ( 'ruta' ) ; por 
+ importar  ruta  desde 'ruta'  de la misma manera que donde se ayuda a anaizar las cookies del cliente se cambio esto 
+ var  cookieParser  = require ( 'cookie-parser' ) ;  por estoimportar  cookieParser  desde 'cookie-parser' ;  y en la biblioteca 
+ para registrar la comunicacion http se cambiovar  logger  = require ( 'morgan' ) ;  por importar  registrador  de 'morgan' 
+  donde se cambio igual la estructura de nuestro codigo para que segun es6 sea mas facil es 
+var  indexRouter  = require ( './routes/index' ) ; 
+var  usersRouter  = require ( './routes/users' ) ; 
+var  apiRouter  = require ( './routes/api' ) ; 
+se cambio por import y en algunos pequeños simbolos como los ()
+importar  indexRouter  desde './routes/index'  
+importar  usuariosRouter  desde './routes/users' ; 
+importar  apiRouter  desde './routes/api' ;  
+
+donde se creo la instancia express se cambio var  app  =  express ( ) por la siguiente manera ;const  app  =  express ( ) ; 
+se cambio donde se ve la configuracion del motor y donde se declara la localizacion de las vistas aplicación _ uso ( '/api' , apiRouter ) ;
+esto se agrego
+
+tambien donde esta la captura 404 y se reenvian los controladores de errores se actualizo a aplicación _ use ( ( req ,  res ,  siguiente ) => {  
+por ultimo el manejador de errores donde algunas lineas se agregaron nada mas como aplicación _ use ( ( err ,  req ,  res ,  siguiente ) => {   por que estaba asi 
+aplicación _ use ( función ( err ,  req ,  res ,  siguiente )  { 
+esos fueron unos cambios que se hicieron en apllicacion.js 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+en la pagina www.js donde se importa la logica del servidor para importar codigo desde un archivo externo se cambio var  aplicación  = requerir ( '../aplicación' ) ; 
+por importar  aplicación  desde '../app' ;  y donde se importan las dependencias igual se hizo un cambio de variables como var  debug  =  require ( 'debug' ) ( 'projnotes' ) ;
+por  importar  depuración  desde  'depuración' ; const  debug  =  Depurar ( 'projnotas' ) y lo que se hizo en el modulo que permite comunicarse con un cliente y tambien usa el 
+protocolo http se hizo el cambio de variables como lo son var  http  = requerir ( 'http' ) ; importar  http  desde 'http' ; 
+
+para la obtencion del puerto del entorno y almacen express se hizo el cambio de variable var  port  =  normalizePort ( proceso . env . PUERTO  ||  '3000' ) ;
+const  port  =  normalizePort ( proceso . env . PUERTO  ||  '3000' ) ; 
+
+donde creamos el servidor http se cambiaron iguales unas variables de funcion como lo son aqui var  servidor  =  http . crearServidor ( aplicación ) ;  // (req, res) => { acciones }
+ servidor  constante =  http . crearServidor ( aplicación ) ;  // (req, res) => { acciones } 
+
+ donde semanejan errores de escucha especificos con mensajes amistosos se cambiaron igual sintaxis como  consola _ error ( bind + ' requiere privilegios elevados ' ) ;   esto por esto 
+      consola _ error ( `  $ { bind } requiere privilegios elevados` ) ; 
+
+      y por ultimo donde esta la funcion escuchar se cambio igual la sintaxis como por ejemplo
+    var  dirección  =  servidor . dirección ( ) ;
+    var  bind  =  typeof  addr  ===  'cadena'
+    ? ' tubería ' + dirección  
+    : ' puerto ' + dirección . puerto ;  
+   
+   dirección  constante =  servidor . dirección ( ) ;
+   const  bind  =  typeof  addr  ===  'cadena'
+    ? ` canalización ${ dirección } `
+    : ` puerto ${ dirección . puerto } ` ;  
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+en la api.js se hicieron cambios igual de sintaxis donde es la importacion de la biblioteca express como por ejemplo se cambio 
+var expreso = require ( ' expreso ' ) ;   
+// Creación de una instancia de enrutador
+var  enrutador  =  expreso . Enrutador ( ) ; 
+por la nueva sintaxis que es //////
+importar expreso de 'expreso' ;   
+const { Enrutador } = express ;   
+const  enrutador  =  enrutador ( ) ;
+ 
+ de igual manera donde esta exportando con el enrutador se cambio módulo _ exportaciones = enrutador ;  por
+exportar enrutador predeterminado ;  
+--------------------------------------------------------------------------------------------------------------------------------
+en el caso de index.js igual se cambio la sintaxix como lo fue var  express  =  require ( 'express' ) ; 
+var  enrutador  =  expreso . Enrutador ( ) ; por la nueva sintaxis que es esta 
+importar  expreso  de  'expreso' ;
+const  { Enrutador }  =  express ;
+
+const  enrutador  =  enrutador ( ) ;
+
+donde se obtiene la pagina de inicio igual se hizo el cambio de funcion por las flechitas como por ejemplo
+enrutador _ obtener ( '/' ,  función ( req ,  res ,  siguiente )  { por el ejemplo de abajo 
+enrutador _ obtener ( '/' ,  ( req ,  res ,  siguiente ) => {  
+----------------------------------------------------------------------------------------------------------------------------
+en usuarios.js se cambiaron varios var por importar o const el ejemplo es el de aqui abajo 
+var  express  =  require ( 'express' ) ;
+var  enrutador  =  expreso . Enrutador ( ) ;
+el cambio a nuevo codigo es 
+importar  expreso  de  'expreso' ;
+const  { Enrutador }  =  express ;
+
+const  enrutador  =  enrutador ( ) ;
+
+enrutador _ obtener ( '/' ,  función ( req ,  res ,  siguiente )  {
+cambio 
+enrutador _ obtener ( '/' ,  ( req ,  res ,  siguiente ) => {  
+  res . enviar ( 'responder con un recurso' ) ;
+} ) ;
+
+módulo _ exportaciones = enrutador ;
+cambio   
+exportar enrutador predeterminado ;  
+
+
 
 
 
@@ -34,7 +150,10 @@ what  we  did  anyway  was  good  remembering  the  class  of  using  a  destruc
 
 
 ## results 
-TODO: ES6  introduces  important  JavaScript  syntax  improvements  which  make  the  code easier  to  read  and  maintain.  Also,  as  the  support  for  browsers  is  extensive,  you can use it in most of your projects natively.ES6,  also  known  as  ECMAScript  2015  or  simply  "Harmony"  is  one  of  the  most important  standards.  Given  its  importance,  browser  support  quickly  grew  from Edge  and  Safari  to  Chrome,  Firefox  and  Opera  and  is  now  supported  by  all browsers
+TODO: ES6  introduces  important  JavaScript  syntax  improvements  which  make  the  code easier  to  read  and  maintain.  Also,  as  the  support  for 
+browsers  is  extensive,  you can use it in most of your projects natively.ES6,  also  known  as  ECMAScript  2015  or  simply  "Harmony"  is  one  of  
+the  most important  standards.  Given  its  importance,  browser  support  quickly  grew  from Edge  and  Safari  to  Chrome,  Firefox  and  Opera  and 
+is  now  supported  by  all browsers
 
 
 ## DISCUSSIONS 
