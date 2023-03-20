@@ -29,8 +29,8 @@ module.exports = {
     // 3.1 Static files folder
     static: path.join(__dirname, "public"),
     // 3.2 Development server port
-    port: 8080,
+    port: 3000,
     // 3.3 Defining the host
-    host: "localhost"
+    host: "0.0.0.0"
   }
 }
