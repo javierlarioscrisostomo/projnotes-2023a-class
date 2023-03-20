@@ -5,6 +5,7 @@
   "scripts": {
     "start": "npm run build && PORT=3000 APP_URL='http://localhost' DEBUG=projnotes node ./dist/bin/www",
     "dev": "PORT=3000 APP_URL='http://localhost' DEBUG=projnotes babel-watch --watch ./SERVER/views ./SERVER/bin/www",
+    "devc": "NODE_ENV=development webpack serve --config ./webpack.config.js --mode development",
     "build": "npm run clean && babel ./server --out-dir dist --copy-files",
     "clean": "rm -rf ./dist"
   },
@@ -26,7 +27,7 @@
     "babel-plugin-module-resolver": "^5.0.0",
     "babel-preset-minify": "^0.5.2",
     "babel-watch": "^7.7.2",
-    "webpack-cli": "^4.6.0",
+    "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.0"
   }
 }
