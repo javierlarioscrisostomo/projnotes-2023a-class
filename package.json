@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npm run build && PORT=3000 APP_URL='http://localhost' DEBUG=projnotes node ./dist/bin/www",
     "dev": "PORT=3000 APP_URL='http://localhost' DEBUG=projnotes babel-watch --watch ./SERVER/views ./SERVER/bin/www",
-    "devc": "NODE_ENV=development webpack serve --config ./webpack.config.js --mode development",
+    "devc": "NODE_ENV=development webpack serve --config ./webpack.dev.config.js --mode development",
     "build": "npm run clean && babel ./server --out-dir dist --copy-files",
     "clean": "rm -rf ./dist"
   },
