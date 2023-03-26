@@ -22,7 +22,7 @@ module.exports = {
     // 3.2 Development server port
     port: 8080,
     // 3.3 Defining the host
-    host: "localhost"
+    host: "0.0.0.0"
   },
   // Adding a module to webpack
   module: {
