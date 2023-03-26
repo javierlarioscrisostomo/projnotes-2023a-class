@@ -21,17 +21,34 @@ module.exports = {
     path: path.resolve(__dirname, "public"),
     // 2.2 Nombre del archivo de salida
     filename: "bundle.js"
-  },
-  // 3. Configurando el servidor de desarrollo
-  // El servidor de desarrollo sirve los archivos
-  // empaquetados para no tener que estar reempaquetando
-  // en cada cambio del código.
-  devServer: {
-    // 3.1 Folder de archivos estáticos
-    static: path.join(__dirname, "public"),
-    // 3.2 Puerto del servidor de desarrollo
-    port: 8080,
-    // 3.3 Definiendo el host
-    host: "0.0.0.0"
+  }, // Adding a module to webpack
+  module: {
+    rules: [
+      {
+				// This section stablishes 
+				// what rules to apply to ".js" files
+        test: /\.js$/,
+				// We Dont want to transpile any kind of modules
+        exclude: /(node_modules|bower_components)/,
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: [
+                [
+                  '@babel/preset-env',
+                  {
+                    'modules': false,
+                    'useBuiltIns': 'usage',
+                    'targets': {"chrome": "80"},
+                    'corejs': 3
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    ]
   }
 }
