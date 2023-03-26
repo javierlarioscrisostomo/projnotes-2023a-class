@@ -1,25 +1,37 @@
-// Important notes
-// 🚨 Configuration file must use ES5 not ES6
-// that's why you will see "requires" not "imports"
+// Notas importanes
+// 🚨 El archivo de configuración debe usar ES5 no ES6
+// es por ello que veras "requires" no "imports"
 
-// Importing an file routing manager
+// Importar un administrador de rutas de archivos
 const path = require('path');
 
-// We export a configuration object
-// that will be used by webpack
+// Exportamos un objeto de configuración
+// que sera usado por webpack
 module.exports = {
-  // 1. The entry file from which
-  // it will contain all the definitions to package
+  // 1. El archivo de entrada a partir del cual
+  // contendra todas las definiciones a empaquetar
   entry: "./client/index.js",
-  // 2. Specify the output file
-  // Here it is detailed where the file will be
-  // final packaged.
+  // 2. Especificar el archivo de salida
+  // Aqui se detalla donde quedara el archivo
+  // final empaquetado.
   output: {
-    // 2.1 Absolute output path
-    // Note that it is being placed in the directory
-    // of the project's static files
+    // 2.1 Ruta absoluta de salida
+    // Note que se esta colocando en el directorio
+    // de archivos estáticos del proyecto
     path: path.resolve(__dirname, "public"),
-    // 2.2 Output file name
+    // 2.2 Nombre del archivo de salida
     filename: "bundle.js"
+  },
+  // 3. Configurando el servidor de desarrollo
+  // El servidor de desarrollo sirve los archivos
+  // empaquetados para no tener que estar reempaquetando
+  // en cada cambio del código.
+  devServer: {
+    // 3.1 Folder de archivos estáticos
+    static: path.join(__dirname, "public"),
+    // 3.2 Puerto del servidor de desarrollo
+    port: 8080,
+    // 3.3 Definiendo el host
+    host: "localhost"
   }
 }
