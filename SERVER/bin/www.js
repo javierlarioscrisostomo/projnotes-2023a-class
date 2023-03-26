@@ -33,6 +33,12 @@ const server = http.createServer(app); // (req, res) => { acciones }
 @@ -40,7 +41,7 @@ server.on('listening', onListening);
  */
 
+
+server.listen(port);
+//Attaching callbacks to events
+server.on('error', onError);
+server.on('listening', onListening);
+
 function normalizePort(val) {
  // var port = parseInt(val, 10);
   const port = parseInt(val, 10);
@@ -40,9 +46,25 @@ function normalizePort(val) {
   if (isNaN(port)) {
     // named pipe
 //@@ -64,18 +65,18 @@ function onError(error) {
-    throw error;
+  return val;
   }
 
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
   //var bind = typeof port === 'string'
   const bind = typeof port === 'string'
     ? 'Pipe ' + port
@@ -61,6 +83,8 @@ function normalizePort(val) {
       process.exit(1);
       break;
     default:
+      throw error;
+  }}
 //@@ -88,9 +89,9 @@ function onError(error) {
  
 
@@ -71,9 +95,9 @@ function onListening() {
    // : 'port ' + addr.port;
   const addr = server.address();
   const bind = typeof addr === 'string'
-    ? `pipe ${addr}`
-    : `port ${addr.port}`;
+  ? 'pipe ' + addr
+  : 'port ' + addr.port;
   debug(`⭐❤ Listening on ${process.env.APP_URL}:${addr.port} ❤⭐`);
-}}}
+}
 
 
