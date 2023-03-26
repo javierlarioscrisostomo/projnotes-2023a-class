@@ -7,10 +7,10 @@
     "dev": "NODE_ENV=development PORT=3000 APP_URL='http://localhost' DEBUG=projnotes babel-watch --watch ./SERVER/views ./SERVER/bin/www",
     "devc": "NODE_ENV=development webpack serve --config ./webpack.dev.config.js --mode development",
     "build": "npm run buildc && npm run builds",
-    "builds": "npm run clean && babel ./server --out-dir dist --copy-files",
+    "builds": "npm run clean && babel ./SERVER --out-dir dist --copy-files",
     "buildc": "npm run cleanc && webpack --config ./webpack.config.js --mode production",
     "clean": "rm -rf ./dist",
-    "cleanc": "rm -f ./public/bundle.js"
+    "cleanc": "rm -f ./public/bundle.js ./public/styles/app.css"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -31,6 +31,8 @@
     "babel-plugin-module-resolver": "^5.0.0",
     "babel-preset-minify": "^0.5.2",
     "babel-watch": "^7.7.2",
+    "css-loader": "^6.7.3",
+    "mini-css-extract-plugin": "^2.7.5",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.0"
   }
