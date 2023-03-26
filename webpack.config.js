@@ -1,27 +1,23 @@
-// Notas importanes
-// 🚨 El archivo de configuración debe usar ES5 no ES6
-// es por ello que veras "requires" no "imports"
+// Important notes
+// 🚨 Configuration file must use ES5 not ES6
+// that's why you will see "requires" not "imports"
 
-// Importar un administrador de rutas de archivos
+// Importing an file routing manager
 const path = require('path');
 
-// Exportamos un objeto de configuración
-// que sera usado por webpack
+// We export a configuration object
+// that will be used by webpack
 module.exports = {
-  // 1. El archivo de entrada a partir del cual
-  // contendra todas las definiciones a empaquetar
-  entry: "./client/index.js",
-  // 2. Especificar el archivo de salida
-  // Aqui se detalla donde quedara el archivo
-  // final empaquetado.
+  
   output: {
-    // 2.1 Ruta absoluta de salida
-    // Note que se esta colocando en el directorio
-    // de archivos estáticos del proyecto
+    // 2.1 Absolute output path
+    // Note that it is being placed in the directory
+    // of the project's static files
     path: path.resolve(__dirname, "public"),
-    // 2.2 Nombre del archivo de salida
+    // 2.2 Output file name
     filename: "bundle.js"
-  }, // Adding a module to webpack
+  },
+  // Adding a module to webpack
   module: {
     rules: [
       {
@@ -51,4 +47,5 @@ module.exports = {
       }
     ]
   }
+
 }

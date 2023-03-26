@@ -5,9 +5,12 @@
   "scripts": {
     "start": "PORT=3000 APP_URL='http://localhost' DEBUG=projnotes node ./dist/bin/www",
     "dev": "NODE_ENV=development PORT=3000 APP_URL='http://localhost' DEBUG=projnotes babel-watch --watch ./SERVER/views ./SERVER/bin/www",
-    "devc": " NODE_ENV=development webpack serve --config ./webpack.dev.config.js --mode development",
-    "build": "npm run clean && babel ./SERVER --out-dir dist --copy-files",
-    "clean": "rm -rf ./dist"
+    "devc": "NODE_ENV=development webpack serve --config ./webpack.dev.config.js --mode development",
+    "build": "npm run buildc && npm run builds",
+    "builds": "npm run clean && babel ./server --out-dir dist --copy-files",
+    "buildc": "npm run cleanc && webpack --config ./webpack.config.js --mode production",
+    "clean": "rm -rf ./dist",
+    "cleanc": "rm -f ./public/bundle.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
